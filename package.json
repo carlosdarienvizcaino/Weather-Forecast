@@ -1,0 +1,19 @@
+{
+  "name": "weather-forcast-spa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./app -a 0.0.0.0 -p 9000 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosdarienvizcaino/Weather-Forecast.git"
+  },
+  "dependencies": {
+    "jade": "^1.11.0",
+    "http-server": "^0.9.0"
+  },
+  "homepage": "https://github.com/carlosdarienvizcaino/Weather-Forecast/blob/master/README.md"
+}

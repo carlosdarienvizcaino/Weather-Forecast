@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forecast</title>
+</head>
+<body>
+
+    <p>
+        <a href="#/" class="btn btn-primary">Search</a>
+    </p>
+    <h4>Forecast {{city}}</h4>
+
+    <hr />
+    Days: <a href="#/forecast/2">2</a> |
+          <a href="#/forecast/5">5</a> |
+    <hr />
+
+    <div ng-repeat="result in weatherResult.list">
+        <div class="row">
+            <div class="col-mid-12">
+                <weather-report
+                        weather-day="result"
+                        convert-to-standard="getTemperatureInFahrenheit(daytimeTemp)"
+                        convert-to-date="convertToDate(dt)"
+                        date-format="MMM, d, y">
+                </weather-report>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
